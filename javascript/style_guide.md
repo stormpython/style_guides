@@ -263,3 +263,86 @@ doSomething({ key1: value1, key2: value2 });
 ```
 
 ## Comments
+Make frequent use of comments to aid others in understanding your code. Use 
+comments when:
+
+* Code is difficult to understand
+* The code might be mistaken for an error
+* Browser-specific code is necessary but not obvious
+* Documentation generation is necessary for an object, method, 
+or property (use appropriate documentation comments).
+
+## Single-Line Comments
+Single line comments should be used to document one line of code or a group 
+of related lines of code. A single line comment may be used in three ways:
+
+* On a separate line, describing the code beneath it
+* At the end of the line, describing the code before it
+* On multiple lines, to comment out sections of code
+
+When on a separate line, a single-line comment should be at the same 
+indentation level as the code it describes and be preceded by a single line. 
+Never use multiple single-line comments on consecutive lines; use a multiline
+ comment instead.
+ 
+```javascript
+// Good
+if (condition) {
+    
+    // if you made it here, then all security checks passed
+    allowed();
+}
+
+// Bad: No empty line preceding comment
+if (condition) {
+    // if you made it here, then all security checks passed
+    allowed();
+}
+
+// Bad: Wrong indentation
+if (condition) {
+
+// if you made it here, then all security checks passed
+    allowed();
+}
+
+// Bad: This is a multiline comment
+// This next piece of code is quite difficult, so let me explain.
+// What you want to do is determine if the condition is true
+// and only then allow the user in. The condition is calculated
+// from several different functions and may change during the
+// lifetime of the session.
+if (condition) {
+    
+    // if you made it here, then all security checks passed
+    allowed();
+}
+```
+
+For single line comments at the end of a line, ensure that there is at least 
+one indentation level between the end of the code and the beginning of the 
+comment:
+
+```javascript
+// Good
+var result = something + somethingElse; // somethingElse will never be null
+
+// Bad: Not enough space between code and comment
+var result = something + somethingElse;// somethingElse will never be null
+```
+
+The only acceptable time to have multiple single-line comments on successive 
+lines is to comment out large sections of code. Multiline comments should not
+ be used for this purpose.
+ 
+```javascript
+// Good
+// if (condition) {
+//     doSomething();
+//     thenDoSomethingElse();
+// }
+```
+
+## Multiline Comments
+
+
