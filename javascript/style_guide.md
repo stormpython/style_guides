@@ -198,3 +198,68 @@ for (i = 0; i < count; i++) {
     process( i );
 }
 ```
+
+## Object Literals
+Object literals should have the following formats:
+
+* The opening brace should be on the same line as the containing statement.
+* Each property-value pair should be indented one level with the first 
+property appearing on the next line after the opening brace.
+* Each property-value pair should have an unquoted property name, 
+followed by a colon (no space preceding it), followed by the value.
+* If the value is a function, it should wrap under the property name and 
+should have a blank line both before and after the function.
+* Additional empty lines may be inserted to group related properties or 
+otherwise improve readability.
+* The closing brace should be on a separate line.
+
+Examples:
+
+```javascript
+// Good
+var object = {
+    
+    key1: value1,
+    key2: value2,
+    
+    func: function() {
+        // do something
+    },
+    
+    key3: value3
+};
+
+// Bad: Improper indentation
+var object = {
+                key1: value1,
+                key2: value2
+             };
+             
+// Bad: Missing blank lines around function
+var object = {
+    
+    key1: value1,
+    key2: value2,
+    func: function() {
+        // do something
+    },
+    key3: value3
+};
+```
+
+When an object literal is passed to a function, the opening brace should be 
+on the same line as if the value is a variable. All other formatting rules 
+listed earlier still apply.
+
+```javascript
+// Good
+doSomething({
+    key1: value1,
+    key2: value2
+});
+
+// Bad: All on one line
+doSomething({ key1: value1, key2: value2 });
+```
+
+## Comments
