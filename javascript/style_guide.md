@@ -76,6 +76,64 @@ var price = .1;
 var num = 010;
 ```
 
+The special value `null` should be used only in the following situations:
+
+    * To initialize variables that may be later assigned an object value
+    * To compare against an initialized variable that may or may not have an 
+    object value
+    * To pass into a function where an object is expected
+    * To return from a function where an object is expected
+    
+Examples:
+
+```javascript
+// Good
+var person = null;
+
+// Good
+function getPerson() {
+    if (condition) {
+        return new Person("Nicholas");
+    } else {
+        return null;
+    }
+}
+
+// Good
+var person = getPerson();
+if (person !== null) {
+    doSomething();
+}
+
+// Bad: Testing against an uninitialized variable
+var person;
+if (person != null) {
+    doSomething();
+}
+
+// Bad: Testing to see if an argument was passed
+function doSomething(arg1, arg2, arg3, arg4) {
+    if (arg4 != null) {
+        doSomethingElse();
+    }
+}
+```
+
+Never use the special value `undefined`. To see if a variable has been 
+defined, use the `typeof` operator:
+
+```javascript
+// Good
+if (typeof variable == "undefined") {
+    // do something
+}
+
+// Bad: Using undefined literal
+if (variable == undefined) {
+    // do something
+}
+```
+
 
 
 
