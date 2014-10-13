@@ -4,15 +4,15 @@ Based on the style guide by Nicholas C. Zakas in
 
 ## Table of Contents
 
-1. [Indentation]()
-2. [Line Length]()
-3. [Primitive Literals]()
-4. [Operator Spacing]()
-5. [Parentheses Spacing]()
-6. [Object Literals]()
-7. [Comments]()
-    * [Single-Line Comments]()
-    * [Multiline Comments]()
+1. [Indentation](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#indentation)
+2. [Line Length](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#line-length)
+3. [Primitive Literals](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#primitive-literals)
+4. [Operator Spacing](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#operator-spacing)
+5. [Parentheses Spacing](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#parentheses-spacing)
+6. [Object Literals](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#object-literals)
+7. [Comments](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#comments)
+    * [Single-Line Comments](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#single-line-comments)
+    * [Multiline Comments](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md#multiline-comments)
     * [Comment Annotations]()
 8. [Variable Declarations]()
 
