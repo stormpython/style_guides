@@ -272,7 +272,7 @@ comments when:
 * Documentation generation is necessary for an object, method, 
 or property (use appropriate documentation comments).
 
-## Single-Line Comments
+### Single-Line Comments
 Single line comments should be used to document one line of code or a group 
 of related lines of code. A single line comment may be used in three ways:
 
@@ -343,6 +343,6 @@ lines is to comment out large sections of code. Multiline comments should not
 // }
 ```
 
-## Multiline Comments
+### Multiline Comments
 
 
