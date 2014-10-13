@@ -14,7 +14,7 @@ Based on the style guide by Nicholas C. Zakas in
     * [Single-Line Comments](#single-line-comments)
     * [Multiline Comments](#multiline-comments)
     * [Comment Annotations](#comment-annotations)
-8. [Variable Declarations]()
+8. [Variable Declarations](#variable-declarations)
 
 ## Indentation
 Each indentation level is made up for four spaces.
@@ -443,19 +443,28 @@ These annotations take the form of a single word followed by a colon. The
 acceptable annotations are:
 
 TODO
+
     Indicates that the code is not yet complete. Information about the next 
     steps should be included.
+    
 HACK
+
     Indicates that the code is using a shortcut. Information about why the 
     hack is being used should be included. This may also indicate that it 
     would be nice to come up with a better way to solve the problem.
+    
 XXX
+
     Indicates that the code is problematic and should be fixed as soon as 
     possible.
+    
 FIXME
+
     Indicates that the code is problematic and should be fixed soon. Less 
     important than `XXX`.
+    
 REVIEW
+
     Indicates that the code needs to be reviewed for potential changes.
 
 These annotations may be used with either single-line or multiline comments 
