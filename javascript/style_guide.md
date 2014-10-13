@@ -32,4 +32,32 @@ doSomething(arguments1, arguments2, arguments3, arguments4
         , arguments5);
 ```
 
+## Primitive Literals
+Strings should always use double quotes (never single quotes) and should always 
+appear on a single line. Never use a slash to create a new line in a string.
+
+```javascript
+// Good
+var name = "Nicholas";
+
+// Bad: Single quotes
+var name = 'Nicholas';
+
+// Bad: Wrapping to second line
+var longString = "Here's the story, of a man \
+named Brady.";
+
+Numbers should be written as decimal integers, e-notation integers, 
+hexadecimal integers, or floating-point decimals with at least one digit 
+before and one digit after the decimal point. Never use octal literals.
+
+// Good
+var count = 10;
+
+// Good
+var price = 10.0;
+var price = 10.00;
+
+
+
 

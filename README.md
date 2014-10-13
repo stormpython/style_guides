@@ -1,4 +1,4 @@
 # Style Guides
 Repository of my personal coding style guides.
 
-[Javascript]()
+[Javascript](https://github.com/stormpython/style_guides/blob/master/javascript/style_guide.md)
