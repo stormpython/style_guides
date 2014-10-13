@@ -154,7 +154,7 @@ for (i = 0; i < count; i++) {
 }
 
 // Bad: Missing spaces
-var found = (values[i]===item;);
+var found = (values[i]===item);
 
 // Bad: Missing spaces
 if (found&&(count>10)) {
@@ -168,3 +168,33 @@ for (i=0; i<count; i++) {
 ```
 
 ## Parenthesis Spacing
+When parentheses are used, there should be no whitespace immediately after 
+the opening paren or immediately before the closing paren.
+
+```javascript
+// Good
+var found = (values[i] === item);
+
+// Good
+if (found && (count > 10)) {
+    doSomething();
+}
+
+// Good
+for (i = 0; i < count; i++) {
+    process(i);
+}
+
+// Bad: Extra space after opening paren
+var found = ( values[i] === item);
+
+// Bad: Extra space after closing paren
+if (found && (count > 10) ) {
+    doSomething();
+}
+
+// Bad: Extra space around argument
+for (i = 0; i < count; i++) {
+    process( i );
+}
+```
