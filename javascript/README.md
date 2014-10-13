@@ -442,7 +442,7 @@ Comments may be used to annotate pieces of code with additional information.
 These annotations take the form of a single word followed by a colon. The 
 acceptable annotations are:
 
-TODO
+<em>TODO</em>
 
     Indicates that the code is not yet complete. Information about the next 
     steps should be included.
