@@ -78,11 +78,11 @@ var num = 010;
 
 The special value `null` should be used only in the following situations:
 
-    * To initialize variables that may be later assigned an object value
-    * To compare against an initialized variable that may or may not have an 
-    object value
-    * To pass into a function where an object is expected
-    * To return from a function where an object is expected
+* To initialize variables that may be later assigned an object value
+* To compare against an initialized variable that may or may not have an 
+object value
+* To pass into a function where an object is expected
+* To return from a function where an object is expected
     
 Examples:
 
