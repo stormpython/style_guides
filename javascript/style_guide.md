@@ -46,17 +46,38 @@ var name = 'Nicholas';
 // Bad: Wrapping to second line
 var longString = "Here's the story, of a man \
 named Brady.";
+```
 
 Numbers should be written as decimal integers, e-notation integers, 
 hexadecimal integers, or floating-point decimals with at least one digit 
 before and one digit after the decimal point. Never use octal literals.
 
+```javascript
 // Good
 var count = 10;
 
 // Good
 var price = 10.0;
 var price = 10.00;
+
+// Good
+var num = 0xA2;
+
+// Good
+var num = 1e23;
+
+// Bad: Hanging decimal point
+var price = 10.;
+
+// Bad: Leading decimal point
+var price = .1;
+
+// Bad: Octal (base 8) is deprecated
+var num = 010;
+```
+
+
+
 
 
 
