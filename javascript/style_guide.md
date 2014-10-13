@@ -2,6 +2,20 @@
 Based on the style guide by Nicholas C. Zakas in 
 [Maintainable Javascript](http://shop.oreilly.com/product/0636920025245.do).
 
+## Table of Contents
+
+1. [Indentation]()
+2. [Line Length]()
+3. [Primitive Literals]()
+4. [Operator Spacing]()
+5. [Parentheses Spacing]()
+6. [Object Literals]()
+7. [Comments]()
+    * [Single-Line Comments]()
+    * [Multiline Comments]()
+    * [Comment Annotations]()
+8. [Variable Declarations]()
+
 ## Indentation
 Each indentation level is made up for four spaces.
 Do not use tabs.
@@ -167,7 +181,7 @@ for (i=0; i<count; i++) {
 }
 ```
 
-## Parenthesis Spacing
+## Parentheses Spacing
 When parentheses are used, there should be no whitespace immediately after 
 the opening paren or immediately before the closing paren.
 
