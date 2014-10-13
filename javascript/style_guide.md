@@ -140,4 +140,31 @@ to make the expression clear. Operators include assignments and logical
 operators.
 
 ```javascript
+// Good
+var found = (values[i] === item);
+
+// Good
+if (found && (count > 10)) {
+    doSomething();
+}
+
+// Good
+for (i = 0; i < count; i++) {
+    process(i);
+}
+
+// Bad: Missing spaces
+var found = (values[i]===item;);
+
+// Bad: Missing spaces
+if (found&&(count>10)) {
+    doSomething();
+}
+
+//Bad: Missing spaces
+for (i=0; i<count; i++) {
+    process(i);
+}
 ```
+
+## Parenthesis Spacing
