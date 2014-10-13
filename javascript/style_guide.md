@@ -374,5 +374,68 @@ lines is to comment out large sections of code. Multiline comments should not
 **[⬆ back to top](#table-of-contents)**
 
 ### Multiline Comments
+Multiline comments should be used to document code that requires more 
+explanation. Each multiline comment should have at least three lines:
+ 
+1. The first line contains only the /* comment opening. No further text is 
+allowed on this line.
 
+2. The next line or lines have a * aligned with the * in the first line. Text
+ is allowed on these lines.
+ 
+3. The last line has the */ comment opening aligned with the preceding lines.
+ No other text is allowed on this line.
+ 
+The first line of multiline comments should be indented to the same level as 
+the code it describes. Each subsequent line should have the same indentation 
+plus one space (for proper alignment of the * characters). Each multiline 
+comment should be preceded by one empty line.
+
+```javascript
+// Good
+if (condition) {
+
+    /*
+     * if you made it here,
+     * then all security checks passed
+     */
+    allowed();
+}
+
+// Bad: No empty line preceding comment
+if (condition) {
+    /*
+     * if you made it here,
+     * then all security checks passed
+     */
+    allowed();
+}
+
+// Bad: Missing a space after asterisk
+if (condition) {
+
+    /*
+     *if you made it here,
+     *then all security checks passed
+     */
+    allowed();
+}
+
+// Bad: Wrong indentation
+if (condition) {
+
+/*
+ *if you made it here,
+ *then all security checks passed
+ */
+    allowed();
+}
+
+// Bad: Don't use multiline comments for trailing comments
+var result = something + somethingElse; /* somethingElse will never be null */
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Comment Annotations
 
