@@ -48,6 +48,8 @@ doSomething(arguments1, arguments2, arguments3, arguments4
         , arguments5);
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Primitive Literals
 Strings should always use double quotes (never single quotes) and should always 
 appear on a single line. Never use a slash to create a new line in a string.
@@ -150,6 +152,8 @@ if (variable == undefined) {
 }
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Operator spacing
 Operators with two operands must be preceded and followed by a single space 
 to make the expression clear. Operators include assignments and logical 
@@ -183,6 +187,8 @@ for (i=0; i<count; i++) {
 }
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Parentheses Spacing
 When parentheses are used, there should be no whitespace immediately after 
 the opening paren or immediately before the closing paren.
@@ -214,6 +220,8 @@ for (i = 0; i < count; i++) {
     process( i );
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Object Literals
 Object literals should have the following formats:
@@ -278,6 +286,8 @@ doSomething({
 doSomething({ key1: value1, key2: value2 });
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Comments
 Make frequent use of comments to aid others in understanding your code. Use 
 comments when:
@@ -287,6 +297,8 @@ comments when:
 * Browser-specific code is necessary but not obvious
 * Documentation generation is necessary for an object, method, 
 or property (use appropriate documentation comments).
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Single-Line Comments
 Single line comments should be used to document one line of code or a group 
@@ -358,6 +370,8 @@ lines is to comment out large sections of code. Multiline comments should not
 //     thenDoSomethingElse();
 // }
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Multiline Comments
 
