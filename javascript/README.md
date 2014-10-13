@@ -537,6 +537,128 @@ Always declare variables. Implied globals should not be used.
 **[⬆ back to top](#table-of-contents)**
 
 ## Function Declarations
+Functions should be declared before they are used. When a function is not a 
+method (that is, not attached to an object), it should be defined using the 
+function declaration format (not function expression format or using the 
+`Function` constructor). There should be no space between the function name 
+and the opening parenthesis. There should be one space between the closing 
+parenthesis and the right brace. The right brace should on the same line as 
+the `function` keyword. There should be no space after the opening 
+parenthesis or before the closing parenthesis. Named arguments should have a 
+space after the comma but not before it. The function body should be indented
+ one level.
+ 
+```javascript
+// Good
+function doSomething(arg1, arg2) {
+    return arg1 + arg2;
+}
+
+// Bad: Improper spacing of first line
+function doSomething (arg1, arg2) {
+    return arg1 + arg2;
+}
+
+// Bad: Function expression
+var doSomething = function(arg1, arg2) {
+    return arg1 + arg2;
+};
+
+// Bad: Left brace on wrong line
+function doSomething(arg1, arg2)
+{
+    return arg1 + arg2;
+}
+
+// Bad: Using the Function constructor
+var doSomething = new Function("arg1", "arg2", "return arg1 + arg2");
+```
+
+Functions declared inside of other functions should be declared immediately 
+after the `var` statement.
+
+```javascript
+// Good
+function outer() {
+    var count = 10;
+    var name = "Nicholas";
+    var found = false;
+    var empty;
+    
+    function inner() {
+        // code
+    }
+    
+    // code that uses inner()
+}
+
+// Bad: Inner function declared before variables
+function outer() {
+    function inner() {
+        // code
+    }
+    
+    var count = 10;
+    var name = "Nicholas";
+    var found = false;
+    var empty;
+
+    // code that uses inner()
+}
+```
+
+Anonymous functions may be used for assignment of object methods or as 
+arguments to other functions. There should be no space between the `function`
+ keyword and the opening parenthesis.
+ 
+```javascript
+// Good
+object.method = function() {
+    // code
+};
+ 
+// Bad: Incorrect spacing
+object.method = function () {
+    // code
+};
+```
+ 
+Immediately invoked functions should surround the entire function call with 
+parentheses.
+ 
+```javascript
+// Good
+var value = (function() {
+    
+    // function body
+    
+    return {
+        message: "Hi"
+    }
+}()); 
+
+// Bad: No parentheses around function call
+var value = function() {
+    
+    // function body
+    
+    return {
+        message: "Hi"
+    }
+}(); 
+
+// Bad: Improper parentheses placement
+var value = (function() {
+    
+    // function body
+    
+    return {
+        message: "Hi"
+    }
+})(); 
+```
+
 **[⬆ back to top](#table-of-contents)**
 
-
+## Naming
+**[⬆ back to top](#table-of-contents)**
