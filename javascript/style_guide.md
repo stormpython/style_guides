@@ -161,7 +161,7 @@ if (found&&(count>10)) {
     doSomething();
 }
 
-//Bad: Missing spaces
+// Bad: Missing spaces
 for (i=0; i<count; i++) {
     process(i);
 }
