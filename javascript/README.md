@@ -442,30 +442,25 @@ Comments may be used to annotate pieces of code with additional information.
 These annotations take the form of a single word followed by a colon. The 
 acceptable annotations are:
 
-``TODO``
-
-    Indicates that the code is not yet complete. Information about the next 
+TODO
+    : Indicates that the code is not yet complete. Information about the next 
     steps should be included.
     
-``HACK``
-
-    Indicates that the code is using a shortcut. Information about why the 
+HACK
+    : Indicates that the code is using a shortcut. Information about why the 
     hack is being used should be included. This may also indicate that it 
     would be nice to come up with a better way to solve the problem.
     
-``XXX``
-
-    Indicates that the code is problematic and should be fixed as soon as 
+XXX
+    : Indicates that the code is problematic and should be fixed as soon as 
     possible.
     
-``FIXME``
-
-    Indicates that the code is problematic and should be fixed soon. Less 
+FIXME
+    : Indicates that the code is problematic and should be fixed soon. Less 
     important than `XXX`.
     
-``REVIEW``
-
-    Indicates that the code needs to be reviewed for potential changes.
+REVIEW 
+    : Indicates that the code needs to be reviewed for potential changes.
 
 These annotations may be used with either single-line or multiline comments 
 and should follow the same formatting rules as the general comment type.
