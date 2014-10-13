@@ -15,6 +15,7 @@ Based on the style guide by Nicholas C. Zakas in
     * [Multiline Comments](#multiline-comments)
     * [Comment Annotations](#comment-annotations)
 8. [Variable Declarations](#variable-declarations)
+9. [Function Declarations](#function-declarations)
 
 ## Indentation
 Each indentation level is made up for four spaces.
@@ -501,6 +502,41 @@ if (document.all) {
 **[⬆ back to top](#table-of-contents)**
 
 ## Variable Declarations
+All variables should be declared before they are used. Variable declarations 
+should take place at the beginning of a function using a `var` statement for 
+each variable per line. Variables should be initialized when declared if 
+applicable. Initialized variables should come first followed by uninitialized
+ variables.
+
+```javascript
+// Good
+var count = 10;
+var name = "Nicholas";
+var found = false;
+var empty;
+
+// Bad: Using a single var statement
+var count   = 10;
+    name    = "Nicholas";
+    found   = false;
+    empty;
+    
+// Bad: Multiple declarations on one line
+var count = 10; var name = "Nicholas"
+var found = false; var empty;
+
+// Bad: Uninitialized variables first
+var empty;
+var count = 10;
+var name = "Nicholas";
+var found = false;
+```
+
+Always declare variables. Implied globals should not be used.
+
+**[⬆ back to top](#table-of-contents)**
+
+## Function Declarations
 **[⬆ back to top](#table-of-contents)**
 
 
