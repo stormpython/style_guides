@@ -16,6 +16,7 @@ Based on the style guide by Nicholas C. Zakas in
     * [Comment Annotations](#comment-annotations)
 8. [Variable Declarations](#variable-declarations)
 9. [Function Declarations](#function-declarations)
+10. [Naming](#naming)
 
 ## Indentation
 Each indentation level is made up for four spaces.
