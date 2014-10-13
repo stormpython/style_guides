@@ -134,9 +134,10 @@ if (variable == undefined) {
 }
 ```
 
+## Operator spacing
+Operators with two operands must be preceded and followed by a single space 
+to make the expression clear. Operators include assignments and logical 
+operators.
 
-
-
-
-
-
+```javascript
+```
