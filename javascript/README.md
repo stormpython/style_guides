@@ -668,7 +668,7 @@ the underscore character. Do not use the dollar sign ($) or backslash (/\)
 characters in any names.
 
 Variable names should be formatted in camel case with the first letter 
-lowercase adn the first letter of each subsequent word uppercase. The first 
+lowercase and the first letter of each subsequent word uppercase. The first 
 word of a variable name should be a noun (not a verb) to avoid confusion with
  functions. Do not use underscores in variable names.
  
@@ -762,6 +762,7 @@ character.
 ```javascript
 // Good
 var object = {
+
     _count: 10,
     
     _getCount: function() {
