@@ -870,4 +870,48 @@ condition ? doSomething() : doSomethingElse();
 **[⬆ back to top](#table-of-contents)**
 
 ## Statements
+### Simple Statements
+Each line should contain at most one statement. All simple statements should 
+end with a semicolon (;).
+
+```javascript
+// Good
+count++;
+a = b;
+
+// Bad: Multiple statements on one line
+count++; a = b;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### return Statement
+A `return` statement with a value should not use parentheses unless they make
+ the return value more obvious in some way. Example:
+ 
+```javascript
+return;
+
+return collection.size();
+
+return (size > 0 ? size : defaultSize);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Compound Statements
+Compound statements are lists of statements enclosed inside of braces.
+
+* The enclosed statements should be indented one more level than the compound
+ statement.
+* The opening brace should be at the end of the line that begins the compound
+ statement; the closing brace should begin a line and be indented to the 
+ beginning of the compound statement.
+* Braces are used around all statements, even single statements, 
+when they are part of a control structure, such as an `if` or `for` statement
+. This convention makes it easier to add statements without accidentally 
+introducing bugs by forgetting to add braces.
+* The statement beginning keyword, such as `if`, should be followed by one 
+space, and the opening brace should be preceded by a space.
+
 **[⬆ back to top](#table-of-contents)**
