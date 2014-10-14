@@ -18,6 +18,21 @@ Based on the style guide by Nicholas C. Zakas in
 9. [Function Declarations](#function-declarations)
 10. [Naming](#naming)
 11. [Strict Mode](#strict-mode)
+12. [Assignments](#assignments)
+13. [Equality Operators](#equality-operators)
+14. [Ternary Operators](#ternary-operators)
+15. [Statements](#statements)
+    * [Simple Statements](#simple-statements)
+    * [return Statement](#return-statement)
+    * [Compound Statements](#compound-statements)
+    * [if Statement](#if-statement)
+    * [for Statement](#for-statement)
+    * [while Statement](#while-statement)
+    * [do Statement](#do-statement)
+    * [switch Statement](#switch-statement)
+    * [try Statement](#try-statement)
+16. [White Space](#white-space)
+17. [Things to Avoid](#things-to-avoid)
 
 ## Indentation
 Each indentation level is made up for four spaces.
@@ -775,4 +790,84 @@ var object = {
 **[⬆ back to top](#table-of-contents)**
 
 ## Strict Mode
+Strict mode should be used only inside of functions, never globally.
+
+```javascript
+// Bad: Global strict mode
+"use strict";
+
+function doSomething() {
+    // code
+}
+
+// Good
+function doSomething() {
+    "use strict";
+    
+    // code
+}
+```
+
+If you want strict mode to apply to multiple functions without needing to 
+write `"use strict"` multiple times, use immediate function invocation.
+
+```javascript
+// Good
+(function() {
+    "use strict";
+    
+    function doSomething() {
+        // code
+    }
+    
+    function doSomethingElse() {
+        // code
+    }
+}());
+```
+    
+**[⬆ back to top](#table-of-contents)**
+
+## Assignments
+When assigning a value to a variable, use parentheses around a right-side 
+expression that contains a comparison.
+
+```javascript
+// Good
+var flag = (i < count);
+
+// Bad: Missing parentheses
+var flag = i < count;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Equality Operators
+Use === and !== instead of == and != to avoid type coercion errors.
+
+```javascript
+// Good
+var same = (a === b);
+
+// Bad: Using ==
+var same = (a == b);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Ternary Operators
+The ternary operator should be used only for assigning values conditionally 
+and never as a shortcut for an `if` statement.
+
+```javascript
+// Good
+var value = condition ? value1 : value2;
+
+// Bad: no assignment, should be an if statement
+condition ? doSomething() : doSomethingElse();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Statements
 **[⬆ back to top](#table-of-contents)**
