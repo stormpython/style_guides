@@ -1,5 +1,6 @@
 # Python Style Guide
 [PEP8 Style Guide for Python Code](http://legacy.python.org/dev/peps/pep-0008/)
+
 [The Hitchhiker's Guide to Python!](http://docs.python-guide.org/en/latest/)
 
 **PEP 8** is the de-facto code style guide for Python.
