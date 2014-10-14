@@ -843,7 +843,7 @@ var flag = i < count;
 **[⬆ back to top](#table-of-contents)**
 
 ## Equality Operators
-Use === and !== instead of == and != to avoid type coercion errors.
+Use `===` and `!==` instead of `==` and `!=` to avoid type coercion errors.
 
 ```javascript
 // Good
