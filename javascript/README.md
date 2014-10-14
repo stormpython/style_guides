@@ -1110,5 +1110,37 @@ try {
 **[⬆ back to top](#table-of-contents)**
 
 ## White Space
+Blank lines improve readability by setting off sections of code that are 
+logically related.
+
+Two blank lines should always be used in the following circumstances:
+
+* Between sections of a source file
+* Between class and interface definitions
+
+One blank line should always be used in the following circumstances:
+
+* Between methods
+* Between the local variables in a method and its first statement
+* Before a multiline or single-line comment
+* Between logical sections inside a method to improve readability
+
+Blank spaces should be used in the following circumstances:
+
+* A keyword followed by a parenthesis should be separated by a space.
+* A blank space should appear after commas in argument lists.
+* All binary operators except dot (.) should be separated from their operands
+ by spaces. Blank spaces should never separate unary operators such as unary 
+ minus, increment (++), and decrement (--) from their operands.
+* The expression in a `for` statement should be separated by blank spaces.
+
+**[⬆ back to top](#table-of-contents)**
+
+## Things to Avoid
+* Never use the primitive wrapper types, such as `String`, 
+to create new objects.
+* Never use `eval()`.
+* never use the `with` statement. This statement isn't available in strict 
+mode and likely won't be available in future ECMAScript editions.
 
 **[⬆ back to top](#table-of-contents)**
