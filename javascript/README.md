@@ -915,3 +915,55 @@ introducing bugs by forgetting to add braces.
 space, and the opening brace should be preceded by a space.
 
 **[⬆ back to top](#table-of-contents)**
+
+### if Statement
+The `if` class of statements should have the following form:
+
+```javascript
+if (condition) {
+    statements
+}
+
+if (condition) {
+    statements
+} else {
+    statements
+}
+
+if (condition) {
+    statements
+} else if (condition) {
+    statements
+} else {
+    statements
+}
+```
+
+It is never permissible to omit the braces in any part of an `if` statement.
+
+```javascript
+// Good
+if (condition) {
+    doSomething();
+}
+
+// Bad: Improper spacing
+if(condition){
+    doSomething():
+}
+
+// Bad: Missing braces
+if (condition)
+    doSomething();
+    
+// Bad: All on one line
+if (condition) { doSomething(); }
+
+// Bad: All on one line without braces
+if (condition) doSomething();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### for Statement
+**[⬆ back to top](#table-of-contents)**
