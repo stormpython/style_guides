@@ -966,4 +966,149 @@ if (condition) doSomething();
 **[⬆ back to top](#table-of-contents)**
 
 ### for Statement
+The `for` class of statements should have the following form:
+
+```javascript
+for (initialization; condition; update) {
+    statements
+}
+
+for (variable in object) {
+    statements
+}
+```
+
+Variables should not be declared in the initialization section of a `for` 
+statement.
+
+```javascript
+// Good
+var i;
+var len;
+
+for (i = 0, len = 10; i < len; i++) {
+    // code
+}
+
+// Bad: Variables declared during initialization
+for (var i = 0, len = 10; i < len; i++) {
+    // code
+}
+
+// Bad: Variables declared during initialization
+for (var prop in object) {
+    // code
+}
+```
+
+When using a `for-in` statement, double-check if you need to use 
+`hasOwnProperty()` to filter out object members.
+
+**[⬆ back to top](#table-of-contents)**
+
+### while Statement
+The `while` class of statements should have the following form:
+
+```javascript
+while (condition) {
+    statements
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### do Statement
+The `do` class of statements should have the following form:
+
+```javascript
+do {
+    statemetns
+} while (condition);
+```
+
+Note the use of a semicolon as the final part of this statement. There should
+ be a space before and after the `while` keyword.
+ 
+**[⬆ back to top](#table-of-contents)**
+
+### switch Statment
+The `switch` class of statements should have the following form:
+
+```javascript
+switch (expression) {
+    case expression:
+        statements
+        
+    default:
+        statements
+}
+```
+
+Each `case` is indented one level under the `switch`. Each `case` after the 
+first, including `default`, should be preceded by a single empty line.
+
+Each group of statements (except the default) should end with `break`, 
+`return`, `throw`, or a comment indicating fall-through.
+
+```javascript
+// Good
+switch (value) {
+    case 1:
+        // falls through
+        
+    case 2:
+        doSomething();
+        break;
+        
+    case 3:
+        return true;
+        
+    default:
+        throw new Error("This shouldn't happen.");
+}
+```
+
+If a `switch` doesn't have a `default` case, then it should be indicated with
+ a comment.
+ 
+```javascript
+// Good
+switch (value) {
+    case 1:
+        // falls through
+        
+    case 2:
+        doSomething();
+        break;
+        
+    case 3:
+        return true;
+        
+    // no default  
+}
+```
+
+### try Statement
+The `try` class of statements should have the following form:
+
+```javascript
+try {
+    statements
+} catch (variable) {
+    statements
+}
+
+try {
+    statements
+} catch (variable) {
+    statements
+} finally {
+    statements
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## White Space
+
 **[⬆ back to top](#table-of-contents)**
