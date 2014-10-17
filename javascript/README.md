@@ -260,7 +260,6 @@ Examples:
 ```javascript
 // Good
 var object = {
-    
     key1: value1,
     key2: value2,
     
@@ -279,7 +278,6 @@ var object = {
              
 // Bad: Missing blank lines around function
 var object = {
-    
     key1: value1,
     key2: value2,
     func: function() {
