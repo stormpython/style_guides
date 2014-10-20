@@ -531,9 +531,9 @@ var found = false;
 var empty;
 
 // Bad: Using a single var statement
-var count   = 10;
-    name    = "Nicholas";
-    found   = false;
+var count   = 10,
+    name    = "Nicholas",
+    found   = false,
     empty;
     
 // Bad: Multiple declarations on one line
